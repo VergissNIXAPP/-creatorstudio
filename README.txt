@@ -1,6 +1,3 @@
-CREATOR STUDIO 2.5
-
-Installationsanleitung: installieren.html
-Web-App: https://creatorstudio-seven.vercel.app/
-
-In der öffentlichen Anleitung werden ausschließlich Schritte für iPhone und Android erklärt.
+Creator Studio 2.6
+Mobile Web-App Update: automatische Header-Ausblendung im installierten Modus, mobile Einstellungen, verbesserter JSON-Backup-Export/Import und Safe Areas.
+Nach dem Update die Web-App einmal vollständig schließen und neu starten. Bestehende lokale Daten bleiben bei unveränderter Domain erhalten.

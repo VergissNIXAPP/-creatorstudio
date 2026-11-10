@@ -40,3 +40,58 @@
 }
 
 .topbar-details[hidden]{display:none!important}
+
+/* Creator Studio 2.6 – native mobile feel */
+html,body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent}
+button,a,label{touch-action:manipulation}
+@media(max-width:850px){
+ .mobile-nav{padding:9px max(6px,env(safe-area-inset-right)) max(10px,var(--safe-bottom)) max(6px,env(safe-area-inset-left));gap:0;box-shadow:0 -10px 28px #0003;backdrop-filter:blur(18px)}
+ .mobile-nav button{flex:1;min-width:0;min-height:51px;padding:5px 2px;font-size:10px;border-radius:12px}
+ .mobile-nav button.active{background:#8172fb20;color:var(--accent2)}
+ .mobile-nav button span{font-size:21px;line-height:1.2}
+ .stat-card,.panel,.item-card,.settings-group{box-shadow:0 12px 28px #0000000f}
+ .modal-overlay{padding:calc(12px + var(--safe-top)) 12px calc(12px + var(--safe-bottom));align-items:flex-end}
+ .modal{max-height:calc(100dvh - var(--safe-top) - var(--safe-bottom) - 24px);width:100%;border-radius:23px 23px 16px 16px;overscroll-behavior:contain}
+ .modal-actions{position:sticky;bottom:0;background:var(--surface);z-index:1;padding:13px 0 4px}
+ .field input,.field textarea,.field select{font-size:16px}
+}
+/* Standalone PWA: the browser-style header never appears, even briefly. */
+@media(max-width:850px){
+ .installed-app .topbar{display:none!important}
+ .installed-app main{padding-top:calc(18px + var(--safe-top));padding-bottom:calc(120px + var(--safe-bottom))}
+ .installed-app .mobile-nav{padding-bottom:max(12px,var(--safe-bottom))}
+ .installed-app .hero-link{display:none}
+ .installed-app .hero{margin-top:0}
+}
+@media(max-width:570px){
+ .hero-side{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .hero-card{padding:12px}
+ .hero-card strong,.hero-card-main strong{font-size:26px}
+ .hero-card span{font-size:11px}
+ .hero-highlights .pill{font-size:9px}
+ .hero-content .hero-actions{margin-top:16px}
+ .hero-actions .btn{min-height:44px}
+}
+.settings-grid{max-width:890px;gap:20px}
+.settings-group{border-radius:19px;border:1px solid var(--line);background:var(--surface);overflow:hidden}
+.settings-group-title{display:flex;align-items:center;gap:14px;padding:20px 20px 15px;border-bottom:1px solid var(--line)}
+.settings-group-title h2{font:700 18px 'Space Grotesk';margin:0 0 5px}
+.settings-group-title p{font-size:12px;line-height:1.45;color:var(--muted);margin:0}
+.settings-icon{display:grid;place-items:center;min-width:40px;width:40px;height:40px;font-size:21px;color:var(--accent2);background:#8172fb23;border-radius:13px}
+.settings-group .settings-item{border:0;border-radius:0;border-bottom:1px solid var(--line);padding:18px 20px}
+.settings-group .settings-item:last-child{border-bottom:0}
+.settings-item .btn{min-height:42px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;white-space:nowrap}
+.settings-item .btn.primary{border:0}
+.settings-stack{flex-direction:column;align-items:stretch}
+.backup-buttons{display:flex;gap:10px;flex-wrap:wrap}
+.backup-textarea{display:block;width:100%;min-height:90px;padding:12px 14px;font-size:14px;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:11px;resize:vertical}
+.a11y-file-input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip-path:inset(50%)}
+.file-import-label{cursor:pointer;text-align:center}
+.danger-text{color:#f18a92}
+@media(max-width:570px){
+ .settings-group-title{padding:17px 16px}
+ .settings-group .settings-item{padding:16px;gap:12px}
+ .settings-group .settings-item>.btn,.file-import-label{width:100%}
+ .backup-buttons .btn{flex:1;min-width:135px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
