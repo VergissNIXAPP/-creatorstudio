@@ -95,3 +95,9 @@ button,a,label{touch-action:manipulation}
  .backup-buttons .btn{flex:1;min-width:135px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+/* Creator Studio 2.7 — Bilder im Projekteditor */
+.image-editor{margin:18px 0;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--surface2)}
+.image-editor-title{display:block;font-size:13px;font-weight:800;margin-bottom:13px}.image-editor-title span{font-weight:400;color:var(--muted)}
+.image-editor-body{display:flex;gap:15px;align-items:center;margin-bottom:16px}.image-preview{width:98px;height:98px;border-radius:17px;display:grid;place-items:center;flex-shrink:0;background:linear-gradient(135deg,#8f72ff,#5142b8);color:#fff;font-size:48px;overflow:hidden;border:1px solid #ac96ff55}.image-preview img{width:100%;height:100%;object-fit:cover}.image-editor-options{min-width:0;display:flex;align-items:flex-start;flex-wrap:wrap;gap:8px}.image-editor-options small,.image-editor-hint{width:100%;color:var(--muted);font-size:11px;line-height:1.5}.upload-btn{display:inline-flex;align-items:center;justify-content:center;position:relative;cursor:pointer;padding:11px 14px;min-height:44px}.upload-btn input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}.upload-btn.is-loading{opacity:.6;pointer-events:none}.image-remove{min-height:44px}.image-remove:disabled{opacity:.45;cursor:not-allowed}.image-editor .field{margin-bottom:6px}.recent-image img{width:100%;height:100%;object-fit:cover;border-radius:inherit}.image-editor .field input{font-size:16px}
+@media(max-width:460px){.image-editor{padding:12px}.image-editor-body{align-items:flex-start}.image-preview{width:76px;height:76px}.image-editor-options .btn{font-size:11px;padding:9px}.image-remove{min-height:40px}}
