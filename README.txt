@@ -13,3 +13,8 @@ Funktionen:
 WICHTIG:
 Daten liegen ausschließlich im LocalStorage des jeweiligen Browsers. Für regelmäßige Backups unter Einstellungen exportieren. Bei Browserwechsel oder anderer Hosting-Adresse müssen Daten per Import übernommen werden. Kein Cloud-Sync.
 Google Fonts werden nur bei bestehender Internetverbindung geladen; ansonsten greifen Systemschriften.
+
+INSTALLATION ALS HANDY-APP (PWA):
+Die Anleitung befindet sich in installieren.html und ist aus der App verlinkt.
+Dateien per HTTPS hosten (z.B. GitHub Pages), dann per Safari/Chrome zum Startbildschirm hinzufügen.
+Manifest, Icons und Service Worker sind enthalten. Keine automatische Synchronisierung zwischen Geräten.
