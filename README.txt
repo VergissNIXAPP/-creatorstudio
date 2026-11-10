@@ -1,20 +1,15 @@
-CREATOR STUDIO 2.0
+CREATOR STUDIO 2.2
 ==================
-Start: index.html im Browser öffnen. Keine Installation erforderlich.
+Live-Adresse: https://creatorstudio-seven.vercel.app/
 
-Funktionen:
-- Responsives Dashboard / mobile Navigation
-- Projekte, Worldbuilding, Pläne/Skripte, Notizen erstellen, bearbeiten und löschen
-- Volltextsuche und Filter, Fortschritt und einzelne Planabschnitte
-- Dark-/Light-Mode, JSON-Backup-Export und Import
-- Übernimmt vorhandene Creator-Studio-Daten aus dem lokalen Browser-Speicher
-- Tastenkürzel Strg+K für Suche, Escape zum Schließen
+ÄNDERUNGEN:
+- Installationsbutton oben rechts in der Hauptnavigation (Desktop und Handy).
+- Veralteter Installationslink aus der linken Seitenleiste entfernt.
+- Installationsanleitung mit realer Vercel-Adresse und ohne GitHub-Hosting-Anweisungen.
+- Offline-Cache-Version erneuert.
 
-WICHTIG:
-Daten liegen ausschließlich im LocalStorage des jeweiligen Browsers. Für regelmäßige Backups unter Einstellungen exportieren. Bei Browserwechsel oder anderer Hosting-Adresse müssen Daten per Import übernommen werden. Kein Cloud-Sync.
-Google Fonts werden nur bei bestehender Internetverbindung geladen; ansonsten greifen Systemschriften.
+DEPLOYMENT:
+Inhalt des Ordners creator-studio ins bestehende GitHub-Repository übernehmen, das mit Vercel verbunden ist. index.html muss im von Vercel genutzten Web-Stammverzeichnis liegen.
 
-INSTALLATION ALS HANDY-APP (PWA):
-Die Anleitung befindet sich in installieren.html und ist aus der App verlinkt.
-Dateien per HTTPS hosten (z.B. GitHub Pages), dann per Safari/Chrome zum Startbildschirm hinzufügen.
-Manifest, Icons und Service Worker sind enthalten. Keine automatische Synchronisierung zwischen Geräten.
+DATEN:
+Lokale Browserdaten bleiben bei gleicher Domain und gleichem Browser bestehen. Regelmäßig Backup über Einstellungen exportieren.
