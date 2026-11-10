@@ -8,3 +8,35 @@
 @media(max-width:850px){.sidebar{display:none}.menu-btn{display:none}.dashboard-grid{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.stats-grid{grid-template-columns:repeat(2,1fr)}.mobile-nav{position:fixed;z-index:60;bottom:0;left:0;right:0;display:flex;justify-content:space-around;background:var(--surface);border-top:1px solid var(--line);padding:8px 5px max(8px,var(--safe-bottom))}.mobile-nav button{background:none;border:0;color:var(--muted);font-size:10px;display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 8px}.mobile-nav button span{font-size:21px}.mobile-nav button.active{color:var(--accent2)}main{padding-bottom:calc(120px + var(--safe-bottom))}.toast{bottom:calc(90px + var(--safe-bottom))}}
 @media(max-width:570px){main{padding:20px 16px calc(110px + var(--safe-bottom))}.topbar{min-height:auto;padding:calc(12px + var(--safe-top)) 12px 12px;flex-direction:column;align-items:stretch;gap:10px}.top-left,.top-right{width:100%}.top-left{justify-content:flex-start}.top-right{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:8px}.top-left .crumb,.crumb-sep,.save-indicator{display:none}.top-left b{font-size:15px}.top-create{padding:9px 12px}.top-create span{display:none}.page-head{align-items:flex-start}.page-head h1{font-size:27px}.page-head .btn{font-size:12px;padding:10px}.hero{padding:24px;min-height:auto;flex-direction:column;gap:18px}.hero h1{font-size:clamp(28px,9vw,36px)}.hero-side{min-width:0;max-width:none;grid-template-columns:1fr 1fr}.hero-highlights{gap:8px}.hero-art{display:none}.stats-grid{gap:10px}.stat-card{padding:16px}.stat-card strong{font-size:25px}.cards{grid-template-columns:1fr}.toolbar{flex-direction:column}.search{max-width:none}.select{padding:12px}.field-grid{grid-template-columns:1fr;gap:0}.settings-item{align-items:flex-start;flex-direction:column}.modal{padding:20px}.modal-actions .btn{flex:1}.install-top{width:100%;padding:10px 12px;gap:6px}.install-top-label{overflow:hidden;text-overflow:ellipsis}.icon-btn{width:34px;height:34px}}
 @media(max-width:390px){.top-right{grid-template-columns:minmax(0,1fr) auto auto}.install-top-label{font-size:0}.install-top-label:after{content:'Installieren';font-size:11px}.top-right{gap:5px}.icon-btn{width:31px;height:33px}.hero-side{grid-template-columns:1fr}}
+
+/* Creator Studio 2.5 — einklappbare Kopfzeile und Schnellaktion im Hero */
+.topbar{gap:12px}
+.topbar-details{display:flex;align-items:center;justify-content:space-between;flex:1;min-width:0;gap:16px}
+.topbar-toggle{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;flex-shrink:0;padding:8px 10px;border:1px solid var(--line);border-radius:11px;color:var(--accent2);background:var(--surface2);font-size:12px;font-weight:700;cursor:pointer;touch-action:manipulation}
+.topbar-toggle:hover{border-color:var(--accent)}
+.toggle-symbol{font-size:19px;line-height:1;display:inline-block;transition:transform .2s}
+.topbar.is-collapsed{justify-content:flex-end;min-height:0;padding-top:calc(5px + var(--safe-top));padding-bottom:5px;background:var(--bg)}
+.topbar.is-collapsed .toggle-symbol{transform:rotate(180deg)}
+.topbar.is-collapsed .topbar-toggle{min-height:32px;padding:4px 10px}
+.hero-heading-row{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%}
+.hero-heading-row .hero-badge{max-width:calc(100% - 56px);min-width:0;white-space:normal;line-height:1.4}
+.hero-create{flex:0 0 44px;width:44px;height:44px;border:1px solid #c0b3ff6b;border-radius:14px;background:linear-gradient(135deg,#8d7bff,#6756de);box-shadow:0 8px 28px #725eff55;color:#fff;font-size:30px;line-height:1;display:grid;place-items:center;cursor:pointer;touch-action:manipulation}
+.hero-create:hover{filter:brightness(1.14);transform:translateY(-1px)}
+.light .topbar{background:var(--bg)}
+.light .hero-create{color:white}
+@media(max-width:850px){.topbar-details{gap:10px}.topbar-details .top-right{gap:9px}}
+@media(max-width:570px){
+ .topbar{flex-direction:row;align-items:center;gap:8px;padding:calc(9px + var(--safe-top)) 12px 9px}
+ .topbar-details{display:flex;flex-direction:column;align-items:stretch;gap:9px}
+ .topbar-details[hidden]{display:none}
+ .topbar-details .top-left,.topbar-details .top-right{width:100%}
+ .topbar-details .top-right{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+ .topbar-toggle{align-self:flex-start;padding:8px;min-width:36px;min-height:36px}
+ .topbar-toggle .toggle-text{display:none}
+ .topbar.is-collapsed{padding:calc(4px + var(--safe-top)) 12px 4px}
+ .hero-heading-row{gap:8px}
+ .hero-heading-row .hero-badge{font-size:9px;letter-spacing:1.15px;padding:9px 10px}
+ .hero-create{flex-basis:42px;width:42px;height:42px;border-radius:13px}
+}
+
+.topbar-details[hidden]{display:none!important}

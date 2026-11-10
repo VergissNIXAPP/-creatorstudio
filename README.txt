@@ -1,4 +1,4 @@
-CREATOR STUDIO 2.4
+CREATOR STUDIO 2.5
 
 Installationsanleitung: installieren.html
 Web-App: https://creatorstudio-seven.vercel.app/
